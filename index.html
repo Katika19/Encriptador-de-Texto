@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comme:wght@300&display=swap" rel="stylesheet">
+
+    <title>Enciptador de Texto</title>
+</head>
+<body>  
+    <header> 
+       <img class="logo" src="Logo1.png" alt="Logo Alura"> 
+       <h2 class="titulo">Encriptador de Texto</h2>
+    </header>
+    <main>
+        <section>
+            <textarea class="texto" cols="40" rows="10" placeholder="Ingrese Texto Aquí"></textarea>
+            <div>
+                <p class="instrucciones">Use solo letras minúsculas y no use acentos</p>
+            </div>
+            <div class="botones">
+                <button class="b-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="b-desencriptar" onclick="btnDesencriptar ()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje" cols="40" rows="10"></textarea>
+            <div id="textoMensaje">
+                <p><strong>Ningún Mensaje fue Encontrado</strong><br> Ingrese el texto que desee encriptar o desencriptar</p>
+            </div>
+            <div>  
+                <button class="b-copiar" onclick="btnCopiar()">Copiar</button>
+                <button class="b-reiniciar" onclick="btnReiniciar()">Reiniciar</button>
+            </div>
+        </section>
+    </main>    
+     
+    <footer> | Powered by @Katika19 | </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
